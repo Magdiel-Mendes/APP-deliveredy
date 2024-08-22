@@ -22,7 +22,7 @@ import br.com.apialgafood.api.model.FormaPagamentoModel;
 import br.com.apialgafood.api.model.input.FormaPagamentoInput;
 import br.com.apialgafood.domain.model.FormaPagamento;
 import br.com.apialgafood.domain.repository.FormaPagamentoRepository;
-import br.com.apialgafood.domain.services.FormaPagamentoService;
+import br.com.apialgafood.domain.services.CadastroFormaPagamentoService;
 
 @RestController
 @RequestMapping("/formaPagamentos")
@@ -38,7 +38,7 @@ public class FormaPagamentoController {
 	private FormaPagamentoRepository repository;
 	
 	@Autowired
-	private FormaPagamentoService service;
+	private CadastroFormaPagamentoService service;
 	
 	@GetMapping
 	private List<FormaPagamentoModel> listar() {

@@ -12,7 +12,7 @@ import br.com.apialgafood.domain.model.FormaPagamento;
 import br.com.apialgafood.domain.repository.FormaPagamentoRepository;
 
 @Service
-public class FormaPagamentoService {
+public class CadastroFormaPagamentoService {
 	
 	private static final String MSG_FORMA_PAGAMENTO_EM_USO 
 	= "Forma de pagamento de código %d não pode ser removido, pois está em uso";
